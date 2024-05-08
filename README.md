@@ -20,3 +20,28 @@ quantitatively reason with them.
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
+
+
+
+According to the slides, the chance of picking a good pivot with the left most element is $1/2$
+    This is because a good pivot would fall in the middle %50
+
+In median of three, we get a pivot by taking the first, middle, and last element
+{p1, ..., p2, ..., p3}
+
+In this scenario, the only good pivot is p2
+A = {p1, p2, p3}
+
+the algorithm selects the middle element, so the only good pivots have p2 as the middle element
+there are 6 permutations of the array A:
+{p1, p2, p3}
+{p1, p3, p2}
+{p3, p1, p3}
+{p2, p3, p1}
+{p3, p1, p2}
+{p3, p2, p1}
+
+2 of these have p2 as the middle element
+there is a $2/6 = 1/3$ 
+$1/3 < 1/2$
+therefore the leftmost element is better
